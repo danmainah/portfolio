@@ -1,6 +1,6 @@
 const Footer = function () {
   return (
-    <h2>Footer area</h2>
+    <h2 className="sticky-bottom" id="Contact">Footer area</h2>
   );
 };
 

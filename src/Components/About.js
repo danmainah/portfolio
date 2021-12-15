@@ -1,44 +1,41 @@
-import { Carousel } from 'react-bootstrap';
+import '../style/About.css';
+import background from '../assets/bg.jpg';
 
 const About = function () {
   return (
-    <Carousel>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="./"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
-          alt="Second slide"
-        />
+    <section id="tmWelcome" className="parallax-window bacground" data-parallax="scroll" style={{ backgroundImage: `url(${background})` }}>
+      <div className="container-fluid tm-brand-container-outer">
+        <div className="row">
+          <div className="col-12">
+            <div className="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
+              <div className="tm-brand-container text-center">
+                <h1 className="tm-brand-name">Daniel Maina</h1>
+                <p className="tm-brand-description mb-0">A Full-stack developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+      <div className="tm-bg-white-transparent tm-welcome-container">
+        <div className="container-fluid">
+          <div className="row h-100">
+            <div className="col-md-7 tm-welcome-left-col">
+              <div className="tm-welcome-left">
+                <h2 className="tm-welcome-title">About me</h2>
+                <p className="pb-0">
+                  A multi-skilled full-stack developer with hands-on experience
+                  in designing and developing web-based applications.
+                  Passionate about designing and developing web-based applications.
+                  Open for exploring exciting full-stack, back-end,
+                  and front-end development opportunities
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
