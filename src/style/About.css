@@ -32,10 +32,6 @@ html {
     text-decoration: none;
   }
   
-  .bacground {
-    background-image: url(../assets/bg.jpg);
-  }
-
   .container-fluid {
     max-width: 1200px;
   }

@@ -1,16 +1,26 @@
 import '../style/About.css';
+import '../style/animations.scss';
 import background from '../assets/bg.jpg';
 
 const About = function () {
   return (
-    <section id="tmWelcome" className="parallax-window bacground" data-parallax="scroll" style={{ backgroundImage: `url(${background})` }}>
-      <div className="container-fluid tm-brand-container-outer">
+    <section id="tmWelcome" className="parallax-window" data-parallax="scroll" style={{ backgroundImage: `url(${background})` }}>
+      <div className="container-fluid tm-brand-container-outer d-flex justify-content-end">
         <div className="row">
           <div className="col-12">
             <div className="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
               <div className="tm-brand-container text-center">
                 <h1 className="tm-brand-name">Daniel Maina</h1>
-                <p className="tm-brand-description mb-0">A Full-stack developer</p>
+                <p className="tm-brand-description mb-0 typing-demo text-center wordCarousel">
+                  <span>Am a: </span>
+                  <div>
+                    <ul className="flip3">
+                      <li>Front-end Developer</li>
+                      <li>Back-end Developer</li>
+                      <li>Full-stack Developer</li>
+                    </ul>
+                  </div>
+                </p>
               </div>
             </div>
           </div>
