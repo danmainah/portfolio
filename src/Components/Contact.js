@@ -33,7 +33,7 @@ const Contact = function () {
   };
   return (
     <div className="row d-flex justify-content-center m-3">
-      <div className="col-5">
+      <div className="col-lg-5 col-md-8 col-sm-12">
         <form className="tm-bg-white-transparent" onSubmit={handleOnSubmit}>
           <div className="form-group p-3">
             <input
