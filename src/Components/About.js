@@ -4,8 +4,8 @@ import background from '../assets/bg.jpg';
 
 const About = function () {
   return (
-    <section id="About" className="parallax-window" data-parallax="scroll" style={{ backgroundImage: `url(${background})` }}>
-      <div className="container-fluid tm-brand-container-outer d-flex justify-content-end">
+    <section id="tmWelcome" className="parallax-window" data-parallax="scroll" style={{ backgroundImage: `url(${background})` }}>
+      <div className="container-fluid tm-brand-container-outer d-flex justify-content-end" id="About">
         <div className="row">
           <div className="col-12">
             <div className="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
