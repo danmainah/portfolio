@@ -13,13 +13,23 @@ const Portfolio = function () {
                 <div className="mb-0">
                   <ul>
                     <li> Front-end development; ReactJS | JQuery | WordPress | NextJS </li>
-                    <li> Back-end development; Ruby on Rails </li>
+                    <li> Back-end development; Ruby on Rails, Django </li>
                     <li> Databases; Postgres | MySql </li>
-                    <li> Infra; Netlify | Heroku | DigitalOcean</li>
                     <li> Mobile development; ReactNative </li>
                     <li> Styling; SASS | CSS-in-JS | Bootstrap | TailwindCSS</li>
+                    <li>
+                      Tools and Methods: Git, GitHub, Heroku, Mobile/Responsive Development,
+                      RSpec, Chrome Dev Tools
+                    </li>
+                    <li> Professional; Remote Pair-Programming, Teamwork</li>
                   </ul>
                 </div>
+                <a
+                  href="https://docs.google.com/document/d/1GP3E5YdVOtdw6YOCsPHWuZd2u3OjSHlm22kaH8SalGY/edit?usp=sharing"
+                  className="btn btn-info m-2 align-item-center"
+                >
+                  View Resume
+                </a>
               </div>
             </div>
           </div>
