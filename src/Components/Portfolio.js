@@ -6,7 +6,7 @@ const Portfolio = function () {
           <div className="col-12">
             <div className="tm-portfolio-item">
               <div className="tm-portfolio-description">
-                <h3 className="text-info">
+                <h3 className="text-dark">
                   My Skills
                   <span className="tm-title-small"> (2019 January to Present)</span>
                 </h3>
