@@ -3,7 +3,7 @@ import '../style/Navbar.css';
 const Navbar = function () {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bgc sticky-top">
+      <nav className="navbar navbar-expand-lg bgc fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand link-info glitter justify-content-center-sm" href="Home">Danmainah</a>
           <button className="navbar-toggler btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
