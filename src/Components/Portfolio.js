@@ -25,6 +25,7 @@ const Portfolio = function () {
                   </ul>
                 </div>
                 <a
+                  id="Projects"
                   href="https://docs.google.com/document/d/1GP3E5YdVOtdw6YOCsPHWuZd2u3OjSHlm22kaH8SalGY/edit?usp=sharing"
                   className="btn btn-info m-2 align-item-center"
                 >

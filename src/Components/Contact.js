@@ -33,7 +33,13 @@ const Contact = function () {
   };
   return (
     <div className="row d-flex justify-content-center m-3" id="Contact">
+      <h3 className="d-flex justify-content-center">Contact</h3>
       <div className="col-lg-5 col-md-8 col-sm-12">
+        <h5 className="tm-welcome-title">
+          Do you have a project you are interested in developing,
+          or open to collaboration...
+          Even if its a suggestion or a question, reach out!
+        </h5>
         <form className="tm-bg-white-transparent" onSubmit={handleOnSubmit}>
           <div className="form-group p-3">
             <input

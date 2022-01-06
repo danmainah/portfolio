@@ -11,7 +11,7 @@ const Navbar = function () {
           </button>
           <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link link-info" href="/">HOME</a>
+              <a className="nav-link link-info" href="#top">HOME</a>
               <a className="nav-link link-info" href="#About">ABOUT</a>
               <a className="nav-link link-info" href="#Projects">PROJECTS</a>
               <a className="nav-link link-info" href="#Contact">CONTACT</a>

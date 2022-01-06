@@ -7,8 +7,9 @@ import projects from '../assets/projects.png';
 
 const Projects = function () {
   return (
-    <div className="container-fluid" id="Projects">
+    <div className="container-fluid">
       <div className="row">
+        <h2 className="tm-welcome-title d-flex bg-secondary bg-gradient justify-content-center">My Projects</h2>
         <div className="card col-lg-6 col-md-6 col-sm-12 bg-secondary bg-gradient">
           <img src={micro} className="card-img-top" alt="..." />
           <div className="card-body">
