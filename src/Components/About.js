@@ -15,9 +15,9 @@ const About = function () {
                   <span>Am a: </span>
                   <div>
                     <ul className="flip3">
-                      <li className="text-info">Front-end Developer</li>
-                      <li className="text-info">Back-end Developer</li>
-                      <li className="text-info">Full-stack Developer</li>
+                      <li className="text-info fs-2">Front-end Developer</li>
+                      <li className="text-info fs-2">Back-end Developer</li>
+                      <li className="text-info fs-2">Full-stack Developer</li>
                     </ul>
                   </div>
                 </div>
