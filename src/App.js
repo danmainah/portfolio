@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from './Components/Navbar';
+import TopNavbar from './Components/Navbar';
 import About from './Components/About';
 import Projects from './Components/Projects';
 import Footer from './Components/Footer';
@@ -9,7 +9,7 @@ import Portfolio from './Components/Portfolio';
 const App = function () {
   return (
     <div className="App">
-      <Navbar />
+      <TopNavbar />
       <About />
       <Portfolio />
       <Projects />

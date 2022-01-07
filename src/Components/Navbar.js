@@ -1,26 +1,25 @@
 import '../style/Navbar.css';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
-const Navbar = function () {
+const TopNavbar = function () {
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg bgc fixed-top">
-        <div className="container-fluid">
+    <div className="bgc">
+      <Navbar collapseOnSelect fixed="top" expand="sm" className="bgc">
+        <Container>
           <a className="navbar-brand link-info glitter justify-content-center-sm" href="/">Danmainah</a>
-          <button className="navbar-toggler btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <a className="nav-link link-info" href="#top">HOME</a>
-              <a className="nav-link link-info" href="#About">ABOUT</a>
-              <a className="nav-link link-info" href="#Projects">PROJECTS</a>
-              <a className="nav-link link-info" href="#Contact">CONTACT</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mx-auto">
+              <Nav.Link className="text-info" href="#top"><span>HOME</span></Nav.Link>
+              <Nav.Link className="text-info" href="#About">ABOUT</Nav.Link>
+              <Nav.Link className="text-info" href="#Projects">PROJECTS</Nav.Link>
+              <Nav.Link className="text-info" href="#Contact">CONTACT</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </div>
   );
 };
 
-export default Navbar;
+export default TopNavbar;
