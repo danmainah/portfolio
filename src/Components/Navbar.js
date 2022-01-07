@@ -10,7 +10,7 @@ const TopNavbar = function () {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
-              <Nav.Link className="text-info" href="#top"><span>HOME</span></Nav.Link>
+              <Nav.Link className="text-info" href="#top">HOME</Nav.Link>
               <Nav.Link className="text-info" href="#About">ABOUT</Nav.Link>
               <Nav.Link className="text-info" href="#Projects">PROJECTS</Nav.Link>
               <Nav.Link className="text-info" href="#Contact">CONTACT</Nav.Link>
