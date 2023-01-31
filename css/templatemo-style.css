@@ -419,6 +419,9 @@ a:hover, a:active, a:focus {
   background: #E9724C;
 }
 
+.cardy-img {
+  width: 45vh;
+}
 #service p {
   font-size: 18px;
   line-height: 30px;
