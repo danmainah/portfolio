@@ -433,24 +433,29 @@ a:hover, a:active, a:focus {
 @media only screen and (min-width: 768px) {
   .card {
     width: auto;
-    height: 45vh;
+    height: 55vh;
     margin: auto;
+  }
+  #service p {
+    font-size: 8px;
+    line-height: 30px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .card {
     width: auto;
-    height: 50vh;
+    height: 65vh;
     margin: auto;
   }
 
   .card-body {
     height: 20vh;
   }
-
-  .cardy-img {
-    height: 20vh;
+  
+  #service p {
+    font-size: 8px;
+    line-height: 30px;
   }
 }
 
