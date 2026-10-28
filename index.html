@@ -1,697 +1,642 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Daniel Portfolio</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Daniel Portfolio" name="keywords" />
-    <meta content=" Daniel Portfolio a software engineer" name="description" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Maina — Solution Builder &amp; Systems Architect</title>
+  <meta name="description" content="Daniel Maina Waweru: solution builder and systems architect. I design and build web, mobile and AI platforms end to end, from monoliths to microservices.">
+  <meta name="theme-color" content="#030712">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Daniel Maina — Solution Builder & Systems Architect">
+  <meta property="og:description" content="I turn ideas into real solutions: web, mobile and AI platforms, from monoliths to microservices.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232563eb'/%3E%3Cstop offset='1' stop-color='%230bceaf'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='800' fill='white' text-anchor='middle'%3EDM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
+    <symbol id="i-grad" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 3v4M17 5h4"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></symbol>
+    <symbol id="i-devices" viewBox="0 0 24 24"><rect x="2" y="4" width="14" height="11" rx="2"/><rect x="17" y="8" width="5" height="12" rx="1.5"/><path d="M6 19h6"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.8c2 .7 3.2 2.5 3.5 5.2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-4.8-8-10.5A4.5 4.5 0 0 1 12 6a4.5 4.5 0 0 1 8 3.5C20 15.2 12 20 12 20z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></symbol>
+    <symbol id="i-network" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v4M12 11.5 6.5 17M12 11.5l5.5 5.5"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.9-4M4 4v4h4M4 13a8 8 0 0 0 14.9 4M20 20v-4h-4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 10v10h16V10"/><path d="M2 10 4 4h16l2 6z"/><path d="M9 20v-6h6v6"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  </svg>
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+  <div class="space" aria-hidden="true"></div>
+  <canvas id="stars" aria-hidden="true"></canvas>
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TYJGGE06P2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-TYJGGE06P2');
-    </script>
-  </head>
-
-  <body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Navbar Start -->
-    <nav
-      class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5"
-    >
-      <a href="index.html" class="navbar-brand ml-lg-3">
-        <h1 class="m-0 display-5">
-          <span class="text-primary">Daniel</span>Portfolio
-        </h1>
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Daniel Maina, home">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <defs><linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563eb"/><stop offset="1" stop-color="#0bceaf"/></linearGradient></defs>
+          <rect width="64" height="64" rx="16" fill="url(#logoGrad)"/>
+          <text x="32" y="42" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="26" font-weight="800" fill="#fff" text-anchor="middle">DM</text>
+        </svg>
+        Daniel Maina
       </a>
-      <button
-        type="button"
-        class="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-        <div class="navbar-nav m-auto py-0">
-          <a href="#home" class="nav-item nav-link active">Home</a>
-          <a href="#about" class="nav-item nav-link">About</a>
-          <a href="#skill" class="nav-item nav-link">Skill</a>
-          <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-          <a href="#testimonial" class="nav-item nav-link">Review</a>
-          <a href="#contact" class="nav-item nav-link">Contact</a>
-        </div>
-        <a
-          href="https://www.linkedin.com/in/danielmaina/"
-          class="btn btn-outline-primary d-none d-lg-block"
-          >Hire Me</a
-        >
-      </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Video Modal Start -->
-    <div
-      class="modal fade"
-      id="videoModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <!-- 16:9 aspect ratio -->
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe
-                class="embed-responsive-item"
-                src=""
-                id="video"
-                allowscriptaccess="always"
-                allow="autoplay"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-pill nav-cta">Let's Connect <svg class="ico"><use href="#i-arrow"/></svg></a>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><svg class="ico"><use href="#i-menu"/></svg></button>
     </div>
-    <!-- Video Modal End -->
+  </header>
 
-    <!-- Header Start -->
-    <div
-      class="container-fluid bg-primary d-flex align-items-center mb-5 py-5"
-      id="home"
-      style="min-height: 100vh"
-    >
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-            <img
-              class="img-fluid w-100 rounded-circle shadow-sm"
-              src="img/profile.jpg"
-              alt=""
-            />
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="kicker">// Hello, I'm<span class="caret"></span></span>
+          <h1>Daniel Maina</h1>
+          <h2>I turn ideas into <span class="grad">real solutions.</span></h2>
+          <p class="typed"><span class="prompt">&gt;</span> role: <span id="role">systems architect</span></p>
+          <p class="hero-lead">Solution builder and systems architect with 6+ years designing and shipping complete platforms: monoliths to microservices, backend to frontend to mobile. My greatest pride is seeing what I build in use, helping businesses, clinicians, students and communities every day.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View My Work <svg class="ico"><use href="#i-arrow"/></svg></a>
+            <a href="assets/Daniel-Maina-Waweru-Resume.pdf" class="btn btn-ghost" download><svg class="ico"><use href="#i-download"/></svg> Download Resume</a>
           </div>
-          <div class="col-lg-7 text-center text-lg-left">
-            <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-            <h1
-              class="display-3 text-uppercase text-primary mb-2"
-              style="-webkit-text-stroke: 2px #ffffff"
-            >
-              Daniel Maina
-            </h1>
-            <h1
-              class="typed-text-output d-inline font-weight-lighter text-white"
-            ></h1>
-            <div class="typed-text d-none">
-              A multi-skilled Software Engineer, Fullstack Developer, Backend
-              Developer, Frontend Developer, MERN Stack Developer.
+          <div class="hero-social">
+            <a class="icon-btn" href="https://github.com/danmainah" target="_blank" rel="noopener" aria-label="GitHub"><img src="img/icons/github.svg" alt=""></a>
+            <a class="icon-btn" href="https://www.linkedin.com/in/danielmaina/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a class="icon-btn" href="mailto:danielmainawaweru@gmail.com" aria-label="Email"><svg class="ico"><use href="#i-mail"/></svg></a>
+            <span class="status"><i></i> Open to opportunities</span>
+          </div>
+          <div class="hero-meta">
+            <span><svg class="ico"><use href="#i-pin"/></svg> Based in Nakuru, Kenya · working remotely</span>
+            <span class="clock" id="clock" aria-label="Local time in Kenya">EAT --:--:--</span>
+          </div>
+        </div>
+
+        <div class="visual" aria-hidden="true">
+          <div class="orbit">
+            <span class="planet"><img src="img/icons/nextdotjs.svg" alt=""></span>
+            <span class="planet"><img src="img/icons/nodedotjs.svg" alt=""></span>
+            <span class="planet"><img src="img/icons/react.svg" alt=""></span>
+            <span class="planet"><img src="img/icons/postgresql.svg" alt=""></span>
+            <span class="planet"><img src="img/icons/docker.svg" alt=""></span>
+            <span class="planet"><img src="img/icons/googlegemini.svg" alt=""></span>
+          </div>
+          <div class="orbit inner"></div>
+          <div class="ring"></div>
+          <img class="photo" src="img/profile.jpg" alt="" width="960" height="960">
+          <div class="float-card fc-quote glass"><small>// Why I build</small><p>“My greatest pride: seeing my work in use.”</p></div>
+          <div class="float-card fc-arch glass"><small>// Architecture</small><p>Monolith → Microservices</p></div>
+          <span class="hand">Design · Build · Impact</span>
+        </div>
+      </div>
+      <div class="horizon" aria-hidden="true"></div>
+      <a href="#about" class="scroll-cue"><span class="mouse"></span>Scroll to explore</a>
+    </section>
+
+    <!-- Impact -->
+    <section class="impact" aria-label="Impact in numbers">
+      <div class="container">
+        <div class="stats glass reveal">
+          <div class="stat"><span class="stat-ico"><svg class="ico"><use href="#i-clock"/></svg></span><div><b data-count="6" data-suffix="+">6+</b><span>Years building production systems</span></div></div>
+          <div class="stat"><span class="stat-ico"><svg class="ico"><use href="#i-store"/></svg></span><div><b data-count="100" data-suffix="+">100+</b><span>Vendors on NdunyuVendor</span></div></div>
+          <div class="stat"><span class="stat-ico"><svg class="ico"><use href="#i-users"/></svg></span><div><b data-count="1500" data-suffix="+">1,500+</b><span>Companies on WeMove</span></div></div>
+          <div class="stat"><span class="stat-ico"><svg class="ico"><use href="#i-server"/></svg></span><div><b data-count="40" data-suffix="%">40%</b><span>Faster API responses</span></div></div>
+          <div class="stat"><span class="stat-ico"><svg class="ico"><use href="#i-grad"/></svg></span><div><b data-count="200" data-suffix="+">200+</b><span>Developers mentored</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <div class="sec-head">
+            <span class="kicker"><b>// 01.</b> About me</span>
+            <h2>More than a developer. <span class="grad">A solution architect.</span></h2>
+          </div>
+          <p>I'm Daniel Maina Waweru, a full-stack software engineer and systems architect from Kenya. I start with the problem, not the tech stack: who it's for, what it must do, and how it needs to grow. Then I design the architecture and build every layer of it.</p>
+          <p>That has meant modular monoliths that get products to market fast and microservices that carry them to scale, secure payment flows on M-Pesa and Stripe, and AI that answers from real data. What I'm proudest of isn't the code. It's that these systems are in use today, solving real problems for real people.</p>
+          <p>The platforms I built at Clinifix, WeMove and Kenoobi Group are live and now in maintenance, so I'm available for a new role to architect and ship the next one.</p>
+          <div class="info-cards">
+            <div class="info-card glass"><span class="ico-wrap"><svg class="ico"><use href="#i-briefcase"/></svg></span><b>Available for new roles</b><span>Current platforms in maintenance</span></div>
+            <div class="info-card glass"><span class="ico-wrap"><svg class="ico"><use href="#i-pin"/></svg></span><b>Nakuru, Kenya</b><span>Working remotely, worldwide</span></div>
+            <div class="info-card glass"><span class="ico-wrap"><svg class="ico"><use href="#i-grad"/></svg></span><b>Diploma in IT</b><span>JKUAT · Microverse</span></div>
+          </div>
+          <p class="script-quote">“Turning ideas into solutions people actually use.”</p>
+        </div>
+
+        <div class="drives glass reveal" style="--d:120ms">
+          <h3>What drives me <svg class="ico"><use href="#i-spark"/></svg></h3>
+          <ul>
+            <li><svg class="ico"><use href="#i-network"/></svg> System design &amp; architecture</li>
+            <li><svg class="ico"><use href="#i-heart"/></svg> Solving real community problems</li>
+            <li><svg class="ico"><use href="#i-shield"/></svg> Clean, secure backends</li>
+            <li><svg class="ico"><use href="#i-devices"/></svg> Polished web &amp; mobile experiences</li>
+            <li><svg class="ico"><use href="#i-cpu"/></svg> Practical, grounded AI</li>
+            <li><svg class="ico"><use href="#i-users"/></svg> Mentoring developers</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise -->
+    <section id="expertise" class="section">
+      <div class="container">
+        <div class="sec-head center reveal">
+          <span class="kicker"><b>// 02.</b> Expertise</span>
+          <h2>Architecture is where <span class="grad">solutions begin.</span></h2>
+          <p>From a monolith that gets you to market, to microservices that carry you to scale. I design the whole system, then build every layer of it.</p>
+        </div>
+
+        <div class="arch-grid">
+          <figure class="diagram glass reveal" data-view="micro">
+            <div class="diagram-top">
+              <small>// System blueprint</small>
+              <div class="tabs" role="tablist" aria-label="Architecture style">
+                <button role="tab" data-view="mono" aria-selected="false">Monolith</button>
+                <button role="tab" data-view="micro" aria-selected="true">Microservices</button>
+              </div>
             </div>
-            <div
-              class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5"
-            >
-              <a
-                href="https://docs.google.com/document/d/15cS7V_2zNX1bKz_cDUxuy4XVQDYHQg5JTNzCkDrZPXs/edit?usp=sharings"
-                class="btn btn-outline-light mr-5"
-                >View My CV</a
-              >
-              <!-- <button
-                type="button"
-                class="btn-social"
-                data-toggle="modal"
-                data-src="https://docs.google.com/document/d/17ib4gZXfFiC7YAU8Dm9TaVmgOZodQM5AIOdp8qal8TI/edit?usp=sharing"
-                data-target="#videoModal"
-              >
-              <i class="fa fa-envelope-open" aria-hidden="true"></i>
-              </button>
-              View It Here
-              <h5
-                class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block"
-              >
-              </h5> -->
+            <svg viewBox="0 0 600 360" role="img" aria-label="Diagram comparing a modular monolith with a microservices architecture">
+              <!-- Clients (shared) -->
+              <rect class="d-box" x="150" y="12" width="120" height="44" rx="10"/><text class="d-text" x="210" y="34">Web app</text>
+              <rect class="d-box" x="330" y="12" width="120" height="44" rx="10"/><text class="d-text" x="390" y="34">Mobile app</text>
+
+              <!-- Modular monolith -->
+              <g class="view v-mono">
+                <path class="d-flow" d="M210 56 C210 80 250 76 250 100"/>
+                <path class="d-flow" d="M390 56 C390 80 350 76 350 100"/>
+                <rect class="d-box big" x="110" y="100" width="380" height="160" rx="16"/>
+                <text class="d-text" x="300" y="122">Modular monolith</text>
+                <text class="d-sub" x="300" y="140">one deployable · clean boundaries</text>
+                <rect class="d-box" x="130" y="160" width="160" height="40" rx="9"/><text class="d-text" x="210" y="180">Auth</text>
+                <rect class="d-box" x="310" y="160" width="160" height="40" rx="9"/><text class="d-text" x="390" y="180">Orders &amp; POS</text>
+                <rect class="d-box" x="130" y="208" width="160" height="40" rx="9"/><text class="d-text" x="210" y="228">Payments</text>
+                <rect class="d-box" x="310" y="208" width="160" height="40" rx="9"/><text class="d-text" x="390" y="228">Notifications</text>
+                <path class="d-flow" d="M300 260 L300 296"/>
+                <rect class="d-box alt" x="210" y="296" width="180" height="50" rx="12"/>
+                <text class="d-text" x="300" y="314">PostgreSQL</text>
+                <text class="d-sub" x="300" y="332">single source of truth</text>
+              </g>
+
+              <!-- Microservices -->
+              <g class="view v-micro">
+                <path class="d-flow" d="M210 56 C210 80 260 76 260 100"/>
+                <path class="d-flow" d="M390 56 C390 80 340 76 340 100"/>
+                <rect class="d-box alt" x="200" y="100" width="200" height="50" rx="12"/>
+                <text class="d-text" x="300" y="118">API Gateway</text>
+                <text class="d-sub" x="300" y="136">auth · rate-limit · routing</text>
+                <path class="d-flow" d="M300 150 C300 175 72 172 72 196"/>
+                <path class="d-flow" d="M300 150 C300 175 224 172 224 196"/>
+                <path class="d-flow" d="M300 150 C300 175 376 172 376 196"/>
+                <path class="d-flow" d="M300 150 C300 175 528 172 528 196"/>
+                <rect class="d-box" x="14" y="196" width="116" height="56" rx="10"/><text class="d-text" x="72" y="216">Auth</text><text class="d-sub" x="72" y="236">⛁ Redis</text>
+                <rect class="d-box" x="166" y="196" width="116" height="56" rx="10"/><text class="d-text" x="224" y="216">Orders</text><text class="d-sub" x="224" y="236">⛁ Postgres</text>
+                <rect class="d-box" x="318" y="196" width="116" height="56" rx="10"/><text class="d-text" x="376" y="216">Payments</text><text class="d-sub" x="376" y="236">M-Pesa · Stripe</text>
+                <rect class="d-box" x="470" y="196" width="116" height="56" rx="10"/><text class="d-text" x="528" y="216">AI · RAG</text><text class="d-sub" x="528" y="236">⛁ pgvector</text>
+                <path class="d-flow" d="M72 252 L72 296"/>
+                <path class="d-flow" d="M224 252 L224 296"/>
+                <path class="d-flow" d="M376 252 L376 296"/>
+                <path class="d-flow" d="M528 252 L528 296"/>
+                <rect class="d-box big" x="14" y="296" width="572" height="48" rx="12"/>
+                <text class="d-text" x="300" y="320">Event bus · queues · webhooks</text>
+              </g>
+            </svg>
+            <figcaption class="diagram-caption">Each service owns its data and scales on its own, while events keep everything in sync. Teams ship independently without stepping on each other.</figcaption>
+          </figure>
+
+          <div>
+            <div class="caps">
+              <div class="cap glass reveal"><span class="ico-wrap"><svg class="ico"><use href="#i-network"/></svg></span><h3>System architecture</h3><p>Monoliths to microservices, multi-tenant SaaS, API gateways and event-driven integration, designed for where the product is going.</p></div>
+              <div class="cap glass reveal" style="--d:80ms"><span class="ico-wrap"><svg class="ico"><use href="#i-server"/></svg></span><h3>Backend engineering</h3><p>Node.js, PHP/Laravel and Rails services, REST APIs, PostgreSQL and MySQL tuning, AES-256 encryption and role-based access.</p></div>
+              <div class="cap glass reveal" style="--d:160ms"><span class="ico-wrap"><svg class="ico"><use href="#i-devices"/></svg></span><h3>Frontend &amp; mobile</h3><p>Next.js and React web apps, plus React Native apps shipped to the App Store and Google Play.</p></div>
+              <div class="cap glass reveal" style="--d:240ms"><span class="ico-wrap"><svg class="ico"><use href="#i-cpu"/></svg></span><h3>Payments &amp; AI</h3><p>M-Pesa Daraja, Stripe and banking APIs; RAG pipelines and LLM features on Gemini, OpenAI and Claude.</p></div>
+            </div>
+            <div class="proof reveal">
+              <span><b>40%</b> faster API responses</span>
+              <span><b>AES-256</b> + RBAC security</span>
+              <span><b>CI/CD</b> zero-downtime releases</span>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Header End -->
+    </section>
 
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
+    <!-- Projects -->
+    <section id="projects" class="section">
       <div class="container">
-        <div
-          class="position-relative d-flex align-items-center justify-content-center"
-        >
-          <h1
-            class="display-1 text-uppercase text-white"
-            style="-webkit-text-stroke: 1px #dee2e6"
-          >
-            About
-          </h1>
-          <h1 class="position-absolute text-uppercase text-primary">
-            About Me
-          </h1>
+        <div class="sec-head center reveal">
+          <span class="kicker"><b>// 03.</b> Projects</span>
+          <h2>Solutions in the <span class="grad">real world.</span></h2>
+          <p>Platforms that businesses, clinicians, students and teams rely on every day.</p>
         </div>
-        <div class="row align-items-center">
-          <div class="col-lg-5 pb-4 pb-lg-0">
-            <img class="img-fluid rounded w-100" src="img/profile.jpg" alt="" />
-          </div>
-          <div class="col-lg-7">
-            <h3 class="mb-4">Software Engineer</h3>
-            <p>
-              A full-stack software engineer with a demonstrated history of
-              working in dynamic environments while applying industry-standard
-              languages and tools. Skilled in front-end and back-end
-              development, communication and collaboration, and problem-solving
-              and critical thinking. Committed to learning and adaptability
-              toward making an overall positive impact through excellent
-              software development.
-            </p>
-            <div class="row mb-3">
-              <div class="col-sm-6 py-2">
-                <h6>Name: <span class="text-secondary">Daniel Maina</span></h6>
-              </div>
-              <div class="col-sm-6 py-2">
-                <h6>
-                  Experience: <span class="text-secondary">4+ Years</span>
-                </h6>
-              </div>
-              <div class="col-sm-6 py-2">
-                <h6>
-                  Phone: <span class="text-secondary">+254725216084</span>
-                </h6>
-              </div>
-              <div class="col-sm-6 py-2">
-                <h6>
-                  Email: <span class="text-secondary">danielmainawaweru@gmail.com</span>
-                </h6>
-              </div>
-              <div class="col-sm-6 py-2">
-                <h6>
-                  Address:
-                  <span class="text-secondary">Solai Road, Nakuru, Kenya</span>
-                </h6>
-              </div>
-              <!-- <div class="col-sm-6 py-2">
-                <h6>
-                  Freelance: <span class="text-secondary">Available</span>
-                </h6>
-              </div> -->
-            </div>
-            <a href="https://www.linkedin.com/in/danielmaina/" class="btn btn-outline-primary mr-4">Hire Me</a>
-            <a href="https://www.linkedin.com/in/danielmaina/" class="btn btn-outline-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- About End -->
 
-    <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
-      <div class="container">
-        <div
-          class="position-relative d-flex align-items-center justify-content-center"
-        >
-          <h1
-            class="display-1 text-uppercase text-white"
-            style="-webkit-text-stroke: 1px #dee2e6"
-          >
-            Skills
-          </h1>
-          <h1 class="position-absolute text-uppercase text-primary">
-            My Skills
-          </h1>
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter" data-filter="all" aria-pressed="true"><svg class="ico"><use href="#i-grid"/></svg> All Projects</button>
+          <button class="filter" data-filter="products" aria-pressed="false"><svg class="ico"><use href="#i-star"/></svg> My Products</button>
+          <button class="filter" data-filter="web" aria-pressed="false"><svg class="ico"><use href="#i-monitor"/></svg> Web Platforms</button>
+          <button class="filter" data-filter="mobile" aria-pressed="false"><svg class="ico"><use href="#i-phone"/></svg> Mobile</button>
+          <button class="filter" data-filter="ai" aria-pressed="false"><svg class="ico"><use href="#i-cpu"/></svg> AI</button>
+          <button class="filter" data-filter="consulting" aria-pressed="false"><svg class="ico"><use href="#i-briefcase"/></svg> Consulting</button>
         </div>
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <div class="skill mb-4">
-              <div class="d-flex justify-content-between">
-                <h6 class="font-weight-bold">Next JS</h6>
-                <h6 class="font-weight-bold">95%</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar bg-primary"
-                  role="progressbar"
-                  aria-valuenow="95"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <div class="skill mb-4">
-              <div class="d-flex justify-content-between">
-                <h6 class="font-weight-bold">ReactJS</h6>
-                <h6 class="font-weight-bold">85%</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar bg-warning"
-                  role="progressbar"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <div class="skill mb-4">
-              <div class="d-flex justify-content-between">
-                <h6 class="font-weight-bold">PHP</h6>
-                <h6 class="font-weight-bold">70%</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar bg-danger"
-                  role="progressbar"
-                  aria-valuenow="70"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="skill mb-4">
-              <div class="d-flex justify-content-between">
-                <h6 class="font-weight-bold">Typescript</h6>
-                <h6 class="font-weight-bold">70%</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar bg-danger"
-                  role="progressbar"
-                  aria-valuenow="70"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <div class="skill mb-4">
-              <div class="d-flex justify-content-between">
-                <h6 class="font-weight-bold">Ruby on Rails</h6>
-                <h6 class="font-weight-bold">70%</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar bg-dark"
-                  role="progressbar"
-                  aria-valuenow="70"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <div class="skill mb-4">
-              <div class="d-flex justify-content-between">
-                <h6 class="font-weight-bold">Wordpress</h6>
-                <h6 class="font-weight-bold">85%</h6>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar bg-info"
-                  role="progressbar"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Skill End -->
 
-    <!-- Portfolio Start -->
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
-      <div class="container">
-        <div
-          class="position-relative d-flex align-items-center justify-content-center"
-        >
-          <h1
-            class="display-1 text-uppercase text-white"
-            style="-webkit-text-stroke: 1px #dee2e6"
-          >
-            Gallery
-          </h1>
-          <h1 class="position-absolute text-uppercase text-primary">
-            My Portfolio
-          </h1>
-        </div>
-        <div class="row">
-          <div class="col-12 text-center mb-2">
-            <ul class="list-inline mb-4" id="portfolio-flters">
-              <li
-                class="btn btn-sm btn-outline-primary m-1 active"
-                data-filter="*"
-              >
-                All
-              </li>
-              <li
-                class="btn btn-sm btn-outline-primary m-1"
-                data-filter=".first"
-              >
-                Frontend
-              </li>
-              <li
-                class="btn btn-sm btn-outline-primary m-1"
-                data-filter=".second"
-              >
-                Fullstack
-              </li>
-              <li
-                class="btn btn-sm btn-outline-primary m-1"
-                data-filter=".third"
-              >
-                Wordpress
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row portfolio-container">
-          <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-            <div class="position-relative overflow-hidden mb-2">
-              <img
-                class="img-fluid rounded w-100"
-                src="img/maths.png"
-                alt=""
-              />
-              <a href="https://6151b8e2a5d486829dfa421d--quizzical-gates-1eca7b.netlify.app/">View Demo</a>
-              <div
-                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
-              >
-                <a href="img/maths.png" data-lightbox="portfolio">
-                  <i class="fa fa-plus text-white" style="font-size: 60px">
-                  </i>
-                </a>
-              </div>
+        <div class="projects">
+          <article class="card featured glass reveal" data-cats="products web">
+            <div class="card-media">
+              <span class="badge"><svg class="ico"><use href="#i-star"/></svg> Founder &amp; Lead Developer</span>
+              <img src="img/projects/ndunyuvendor.jpg" alt="NdunyuVendor homepage" width="1280" height="800" loading="lazy">
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-            <div class="position-relative overflow-hidden mb-2">
-              <img
-                class="img-fluid rounded w-100"
-                src="img/micro.png"
-                alt="Micro reddit project"
-              />
-              <a href="https://github.com/danmainah/micro-reddit">View Code</a>
-              <div
-                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
-              >
-                <a href="img/micro.png" data-lightbox="portfolio">
-                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
-                </a>
+            <div class="card-body">
+              <div class="fb-main">
+                <ul class="tags"><li>Multi-tenant SaaS</li><li>POS</li><li>eCommerce</li></ul>
+                <h3>NdunyuVendor</h3>
+                <p>All-in-one POS, inventory and online-store platform for 30+ business types. I designed the multi-tenant architecture and built every layer, from offline-capable POS to Stripe and M-Pesa checkout, and grew it to 100+ active vendors within six months.</p>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-            <div class="position-relative overflow-hidden mb-2">
-              <img
-                class="img-fluid rounded w-100"
-                src="img/vacations.png"
-                alt="Vacations project"
-              />
-              <a href="https://github.com/danmainah/vacations-booking-front-end">View Code</a>
-              <div
-                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
-              >
-                <a href="img/vacations.png" data-lightbox="portfolio">
-                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-            <div class="position-relative overflow-hidden mb-2">
-              <img
-                class="img-fluid rounded w-100"
-                src="img/summit.png"
-                alt=" Wesh Website"
-              />
-              <a href="https://sustainableinsurancedeclaration.org/">View App</a>
-              <div
-                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
-              >
-                <a href="img/summit.png" data-lightbox="portfolio">
-                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-            <div class="position-relative overflow-hidden mb-2">
-              <img
-                class="img-fluid rounded w-100"
-                src="img/dashboard.png"
-                alt="Dashboard Website"
-              />
-              <a href="https://growthpad-dashboard-project-vert.vercel.app/">View App</a>
-              <div
-                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
-              >
-                <a href="img/dashboard.png" data-lightbox="portfolio">
-                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-            <div class="position-relative overflow-hidden mb-2">
-              <img
-                class="img-fluid rounded w-100"
-                src="img/agency.png"
-                alt="Agency website"
-              />
-              <a href="https://danmainah.github.io/agency/">View App</a>
-              <div
-                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
-              >
-                <a href="img/agency.png" data-lightbox="portfolio">
-                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-            <div class="position-relative overflow-hidden mb-2">
-              <img
-                class="img-fluid rounded w-100"
-                src="img/musika.png"
-                alt="Musika Website"
-              />
-              <a href="https://danmainah.github.io/music-instruments-store/">View App</a>
-              <div
-                class="portfolio-btn bg-primary d-flex align-items-center justify-content-center"
-              >
-                <a href="img/musika.png" data-lightbox="portfolio">
-                  <i class="fa fa-plus text-white" style="font-size: 60px"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Portfolio End -->
-
-    <!-- Testimonial Start -->
-    <div class="row justify-content-center"  id="testimonial">
-      <div class="container">
-        <div
-          class="position-relative d-flex align-items-center justify-content-center"
-        >
-          <h1
-            class="display-1 text-uppercase text-white"
-            style="-webkit-text-stroke: 1px #dee2e6"
-          >
-            Testimonial
-          </h1>
-          <h1 class="position-absolute text-uppercase text-primary">
-            Testimonial
-          </h1>
-        </div>
-      <div class="col-lg-10">
-        <div class="owl-carousel testimonial-carousel">
-          <div class="justify-content-center">
-            <img
-            src="img/testy.png"
-            alt="testimonial image"
-          />
-          </div>
-          <div class="text-center">
-            <img
-            src="img/testy1.png"
-            alt="testimonial image"
-          />
-          </div>
-          <div class="text-center">
-            <img
-            src="img/testy.png"
-            alt="testimonial image"
-          />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Testimonial End -->
-
-
-    <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
-      <div class="container">
-        <div
-          class="position-relative d-flex align-items-center justify-content-center"
-        >
-          <h1
-            class="display-1 text-uppercase text-white"
-            style="-webkit-text-stroke: 1px #dee2e6"
-          >
-            Contact
-          </h1>
-          <h1 class="position-absolute text-uppercase text-primary">
-            Contact Me
-          </h1>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="contact-form text-center">
-              <div id="success"></div>
-              <form name="sentMessage" id="contactForm" action="https://formspree.io/f/xqknzjpd" method="POST">
-                <div class="form-row">
-                  <div class="control-group col-sm-6">
-                    <input
-                      name="fullname"
-                      type="text"
-                      class="form-control p-4"
-                      id="fullname"
-                      placeholder="Your Name"
-                      required="required"
-                      data-validation-required-message="Please enter your name"
-                    />
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="control-group col-sm-6">
-                    <input
-                      type="email"
-                      class="form-control p-4"
-                      id="email"
-                      placeholder="Your Email"
-                      required="required"
-                      data-validation-required-message="Please enter your email"
-                    />
-                    <p class="help-block text-danger"></p>
-                  </div>
+              <div class="fb-side">
+                <small class="built">// Built with</small>
+                <ul class="chips"><li>Next.js</li><li>TypeScript</li><li>PostgreSQL</li><li>Prisma</li><li>Stripe</li><li>M-Pesa</li><li>AWS S3</li><li>Cloudflare</li></ul>
+                <div class="card-foot">
+                  <div class="card-links"><a class="link" href="https://ndunyuvendor.com" target="_blank" rel="noopener">View Project <svg class="ico"><use href="#i-arrow"/></svg></a></div>
+                  <a class="circle" href="https://ndunyuvendor.com" target="_blank" rel="noopener" aria-label="Open NdunyuVendor"><svg class="ico"><use href="#i-arrow"/></svg></a>
                 </div>
-                <div class="control-group">
-                  <textarea
-                    class="form-control py-3 px-4"
-                    rows="5"
-                    name="message"
-                    id="message"
-                    placeholder="Message"
-                    required="required"
-                    data-validation-required-message="Please enter your message"
-                  ></textarea>
-                  <p class="help-block text-danger"></p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card glass reveal" data-cats="products ai web">
+            <div class="card-media">
+              <span class="badge"><svg class="ico"><use href="#i-star"/></svg> Founder &amp; Developer</span>
+              <img src="img/projects/revisemint.jpg" alt="ReviseMint homepage" width="1280" height="800" loading="lazy">
+            </div>
+            <div class="card-body">
+              <ul class="tags"><li>EdTech</li><li>AI</li><li>SaaS</li></ul>
+              <h3>ReviseMint</h3>
+              <p>Exam-prep platform helping nurses pass OET, IELTS and NCLEX. Every answer is explained, and AI drafts new questions grounded in course notes through a pgvector RAG pipeline, with human review before publishing.</p>
+              <p class="stack-line">Next.js 16 · Postgres + pgvector · Gemini · LemonSqueezy</p>
+              <div class="card-foot">
+                <div class="card-links"><a class="link" href="https://revisemint.com" target="_blank" rel="noopener">View Project <svg class="ico"><use href="#i-arrow"/></svg></a></div>
+                <a class="circle" href="https://revisemint.com" target="_blank" rel="noopener" aria-label="Open ReviseMint"><svg class="ico"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card glass reveal" data-cats="web">
+            <div class="card-media">
+              <span class="badge"><svg class="ico"><use href="#i-briefcase"/></svg> Lead Software Developer</span>
+              <img src="img/projects/clinifix.jpg" alt="Clinifix homepage" width="1280" height="800" loading="lazy">
+            </div>
+            <div class="card-body">
+              <ul class="tags"><li>HealthTech</li><li>Marketplace</li></ul>
+              <h3>Clinifix</h3>
+              <p>Healthcare platform connecting verified professionals with facilities across Kenya. I led its architecture end to end: microservices on Node.js and PHP, M-Pesa and banking payment flows and AES-256 encryption for patient data. Now maintaining it.</p>
+              <p class="stack-line">Node.js · PHP · MySQL · M-Pesa Daraja · Africa's Talking</p>
+              <div class="card-foot">
+                <div class="card-links"><a class="link" href="https://clinifix.co.ke" target="_blank" rel="noopener">View Project <svg class="ico"><use href="#i-arrow"/></svg></a></div>
+                <a class="circle" href="https://clinifix.co.ke" target="_blank" rel="noopener" aria-label="Open Clinifix"><svg class="ico"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card glass reveal" data-cats="mobile web">
+            <div class="card-media phones">
+              <span class="badge"><svg class="ico"><use href="#i-phone"/></svg> Software Developer</span>
+              <img src="img/projects/wemove-a.webp" alt="WeMove team step challenge screen" width="392" height="848" loading="lazy">
+              <img src="img/projects/wemove-c.webp" alt="WeMove app screen" width="392" height="848" loading="lazy">
+              <img src="img/projects/wemove-b.webp" alt="WeMove rewards screen" width="392" height="848" loading="lazy">
+            </div>
+            <div class="card-body">
+              <ul class="tags"><li>Mobile</li><li>Wellness</li><li>iOS &amp; Android</li></ul>
+              <h3>WeMove</h3>
+              <p>Team step-challenge platform used by 1,500+ companies. I built and launched the React Native app on the App Store and Google Play (4.5+ stars), plus Next.js web apps, Stripe subscriptions and Node.js APIs. Now maintaining them.</p>
+              <p class="stack-line">React Native · Expo · Next.js · Node.js · Stripe</p>
+              <div class="card-foot">
+                <div class="card-links">
+                  <a class="link" href="https://apps.apple.com/us/app/wemove-team-step-challenge/id6758730837" target="_blank" rel="noopener">App Store <svg class="ico"><use href="#i-arrow"/></svg></a>
+                  <a class="link sub" href="https://app.getwemove.com" target="_blank" rel="noopener">Web app</a>
                 </div>
-                <div>
-                  <button
-                    class="btn btn-outline-primary"
-                    name="submit"
-                    type="submit"
-                    id="sendMessageButton"
-                  >
-                    Send Message
-                  </button>
+                <a class="circle" href="https://apps.apple.com/us/app/wemove-team-step-challenge/id6758730837" target="_blank" rel="noopener" aria-label="Open WeMove on the App Store"><svg class="ico"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card glass reveal" data-cats="products ai">
+            <div class="card-media">
+              <span class="badge"><svg class="ico"><use href="#i-star"/></svg> Creator</span>
+              <img src="img/projects/paysense.jpg" alt="PaySense AI shop assistant demo" width="1280" height="800" loading="lazy">
+            </div>
+            <div class="card-body">
+              <ul class="tags"><li>AI</li><li>Payments</li><li>RAG</li></ul>
+              <h3>PaySense</h3>
+              <p>AI shop assistant that answers from a store's own documents and takes payment inside the chat via M-Pesa STK push or Stripe. Prices are always recalculated server-side, never trusted from the model.</p>
+              <p class="stack-line">Next.js · Gemini · pgvector · Stripe · M-Pesa</p>
+              <div class="card-foot">
+                <div class="card-links">
+                  <a class="link" href="https://paysense-seven.vercel.app/" target="_blank" rel="noopener">Live Demo <svg class="ico"><use href="#i-arrow"/></svg></a>
+                  <a class="link sub" href="https://github.com/danmainah/paysense" target="_blank" rel="noopener">Code</a>
                 </div>
-              </form>
+                <a class="circle" href="https://paysense-seven.vercel.app/" target="_blank" rel="noopener" aria-label="Open PaySense"><svg class="ico"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card glass reveal" data-cats="consulting web">
+            <div class="card-media">
+              <span class="badge"><svg class="ico"><use href="#i-briefcase"/></svg> Consultant · End to end</span>
+              <img src="img/projects/kiffwa.jpg" alt="KIFFWA Impact Dashboard" width="1280" height="800" loading="lazy">
+            </div>
+            <div class="card-body">
+              <ul class="tags"><li>Data Viz</li><li>Impact</li><li>Water sector</li></ul>
+              <h3>KIFFWA Impact Dashboard</h3>
+              <p>Impact dashboard for KIFFWA, empowering Kenya's water sector: water sold, electricity supplied and CO₂ reduction over time. As consultant I owned it end to end, from design and architecture to delivery.</p>
+              <p class="stack-line">Next.js · React · Data visualisation</p>
+              <div class="card-foot">
+                <div class="card-links"><a class="link" href="https://growthpad-dashboard-project-vert.vercel.app/" target="_blank" rel="noopener">View Project <svg class="ico"><use href="#i-arrow"/></svg></a></div>
+                <a class="circle" href="https://growthpad-dashboard-project-vert.vercel.app/" target="_blank" rel="noopener" aria-label="Open KIFFWA Impact Dashboard"><svg class="ico"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card glass reveal" data-cats="consulting web">
+            <div class="card-media">
+              <span class="badge"><svg class="ico"><use href="#i-briefcase"/></svg> Consultant · Contributor</span>
+              <img src="img/projects/creditbank.jpg" alt="Credit Bank Diaspora Champions Challenge site" width="1280" height="800" loading="lazy">
+            </div>
+            <div class="card-body">
+              <ul class="tags"><li>Fintech</li><li>Campaign</li></ul>
+              <h3>Credit Bank Diaspora Champions</h3>
+              <p>Gamified campaign microsite for Credit Bank's diaspora customers, with points, a leaderboard, rewards and quizzes. I contributed part of the build as a consultant.</p>
+              <p class="stack-line">Next.js</p>
+              <div class="card-foot">
+                <div class="card-links"><a class="link" href="https://credit-bank-microsite.vercel.app/" target="_blank" rel="noopener">View Project <svg class="ico"><use href="#i-arrow"/></svg></a></div>
+                <a class="circle" href="https://credit-bank-microsite.vercel.app/" target="_blank" rel="noopener" aria-label="Open Credit Bank microsite"><svg class="ico"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card glass reveal" data-cats="consulting web">
+            <div class="card-media">
+              <span class="badge"><svg class="ico"><use href="#i-briefcase"/></svg> Consultant · Contributor</span>
+              <img src="img/projects/ndsi.jpg" alt="Nairobi Declaration on Sustainable Insurance website" width="1280" height="800" loading="lazy">
+            </div>
+            <div class="card-body">
+              <ul class="tags"><li>Sustainability</li><li>Insurance</li></ul>
+              <h3>Nairobi Declaration on Sustainable Insurance</h3>
+              <p>Website for NDSI, a pan-African initiative driving sustainability across the insurance industry. I contributed part of the build as a consultant.</p>
+              <p class="stack-line">WordPress</p>
+              <div class="card-foot">
+                <div class="card-links"><a class="link" href="https://sustainableinsurancedeclaration.org/" target="_blank" rel="noopener">View Project <svg class="ico"><use href="#i-arrow"/></svg></a></div>
+                <a class="circle" href="https://sustainableinsurancedeclaration.org/" target="_blank" rel="noopener" aria-label="Open NDSI website"><svg class="ico"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="sec-head center reveal">
+          <span class="kicker"><b>// 04.</b> Experience</span>
+          <h2>A track record of <span class="grad">shipping.</span></h2>
+          <p>Remote engineering roles across healthcare, wellness, careers, betting and client work.</p>
+        </div>
+        <ol class="timeline">
+          <li class="job current reveal">
+            <div class="job-card glass">
+              <div class="job-top"><h3>Lead Software Developer · <span class="org">Clinifix</span><span class="now">Maintaining</span></h3><time>Jan 2025 – Present</time></div>
+              <p>Led end-to-end engineering of a healthcare platform: microservices on Node.js and PHP, M-Pesa and banking integrations, AES-256 encryption and RBAC, CI/CD and code-review standards, and 30% faster time-to-feature. Now maintaining the platform I built.</p>
+            </div>
+          </li>
+          <li class="job current reveal">
+            <div class="job-card glass">
+              <div class="job-top"><h3>Software Developer · <span class="org">Reaction Wellness (WeMove)</span><span class="now">Maintaining</span></h3><time>Dec 2025 – Present</time></div>
+              <p>Built and launched the React Native app on the App Store and Google Play (4.5+ stars, zero critical bugs in the first 30 days), plus two Next.js web apps, Stripe subscriptions and Node.js APIs on PostgreSQL. Now maintaining them in production.</p>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job-card glass">
+              <div class="job-top"><h3>Full-Stack Developer · <span class="org">Lillup</span></h3><time>Mar 2024 – Oct 2024</time></div>
+              <p>Led leader dashboards, career tracking and an AI recommendation engine on the OpenAI API, and partnered with the CTO on system architecture and the data pipelines feeding LLM features.</p>
+            </div>
+          </li>
+          <li class="job current reveal">
+            <div class="job-card glass">
+              <div class="job-top"><h3>Full-Stack Developer · <span class="org">Kenoobi Group</span><span class="now">Maintaining</span></h3><time>2020 – Present</time></div>
+              <p>Built production apps for multiple clients on React, Node.js, Express, MongoDB, Laravel and SQL; architected microservices handling thousands of concurrent requests, and CI/CD that cut API response times by 40%. Now maintaining the systems I delivered.</p>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job-card glass">
+              <div class="job-top"><h3>Technical Support Engineer · <span class="org">Microverse</span></h3><time>2022 – 2024</time></div>
+              <p>Mentored a global cohort of 200+ developers through code reviews, debugging sessions and architectural coaching on JavaScript, React and Node.js.</p>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job-card glass">
+              <div class="job-top"><h3>Junior Software Developer · <span class="org">Revobet</span></h3><time>2022 – 2023</time></div>
+              <p>Delivered 20+ platform features with Vue.js, Node.js and Express, and resolved 18+ critical database performance bottlenecks.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="sec-head center reveal">
+          <span class="kicker"><b>// 05.</b> Skills</span>
+          <h2>Tools that turn ideas into <span class="grad">systems.</span></h2>
+          <p>The stack behind the products, chosen for the problem rather than the trend.</p>
+        </div>
+        <div class="filters reveal" role="group" aria-label="Filter skills" id="skill-filters">
+          <button class="filter sm" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter sm" data-filter="architecture" aria-pressed="false">Architecture</button>
+          <button class="filter sm" data-filter="frontend" aria-pressed="false">Frontend</button>
+          <button class="filter sm" data-filter="mobile" aria-pressed="false">Mobile</button>
+          <button class="filter sm" data-filter="backend" aria-pressed="false">Backend</button>
+          <button class="filter sm" data-filter="ai" aria-pressed="false">AI</button>
+          <button class="filter sm" data-filter="data" aria-pressed="false">Data</button>
+          <button class="filter sm" data-filter="devops" aria-pressed="false">Cloud &amp; DevOps</button>
+          <button class="filter sm" data-filter="payments" aria-pressed="false">Payments</button>
+          <button class="filter sm" data-filter="leadership" aria-pressed="false">Leadership</button>
+        </div>
+        <p class="skill-count" id="skill-count" aria-live="polite"></p>
+        <ul class="skills" id="skills-grid">
+          <li class="skill glass" data-cat="architecture"><span class="logo"><svg class="ico"><use href="#i-layers"/></svg></span><b>System design</b><span>Architecture</span></li>
+          <li class="skill glass" data-cat="architecture"><span class="logo"><svg class="ico"><use href="#i-network"/></svg></span><b>Microservices</b><span>Architecture</span></li>
+          <li class="skill glass" data-cat="architecture"><span class="logo"><svg class="ico"><use href="#i-layers"/></svg></span><b>Modular monoliths</b><span>Architecture</span></li>
+          <li class="skill glass" data-cat="architecture"><span class="logo"><svg class="ico"><use href="#i-code"/></svg></span><b>REST API design</b><span>Architecture</span></li>
+          <li class="skill glass" data-cat="architecture"><span class="logo"><svg class="ico"><use href="#i-server"/></svg></span><b>Multi-tenant SaaS</b><span>Architecture</span></li>
+          <li class="skill glass" data-cat="architecture"><span class="logo"><svg class="ico"><use href="#i-shield"/></svg></span><b>AES-256 &amp; RBAC</b><span>Architecture</span></li>
+          <li class="skill glass" data-cat="architecture"><span class="logo"><svg class="ico"><use href="#i-heart"/></svg></span><b>HIPAA-aware development</b><span>Architecture</span></li>
+          <li class="skill glass" data-cat="frontend"><span class="logo"><img src="img/icons/react.svg" alt=""></span><b>React</b><span>Frontend</span></li>
+          <li class="skill glass" data-cat="frontend"><span class="logo"><img src="img/icons/nextdotjs.svg" alt=""></span><b>Next.js</b><span>Frontend</span></li>
+          <li class="skill glass" data-cat="frontend"><span class="logo"><img src="img/icons/typescript.svg" alt=""></span><b>TypeScript</b><span>Frontend</span></li>
+          <li class="skill glass" data-cat="frontend"><span class="logo"><img src="img/icons/javascript.svg" alt=""></span><b>JavaScript</b><span>Frontend</span></li>
+          <li class="skill glass" data-cat="frontend"><span class="logo"><img src="img/icons/vuedotjs.svg" alt=""></span><b>Vue.js</b><span>Frontend</span></li>
+          <li class="skill glass" data-cat="frontend"><span class="logo"><img src="img/icons/nuxt.svg" alt=""></span><b>Nuxt</b><span>Frontend</span></li>
+          <li class="skill glass" data-cat="frontend"><span class="logo"><img src="img/icons/redux.svg" alt=""></span><b>Redux</b><span>Frontend</span></li>
+          <li class="skill glass" data-cat="frontend"><span class="logo"><img src="img/icons/tailwindcss.svg" alt=""></span><b>Tailwind CSS</b><span>Frontend</span></li>
+          <li class="skill glass" data-cat="mobile"><span class="logo"><img src="img/icons/react.svg" alt=""></span><b>React Native</b><span>Mobile</span></li>
+          <li class="skill glass" data-cat="mobile"><span class="logo"><img src="img/icons/expo.svg" alt=""></span><b>Expo</b><span>Mobile</span></li>
+          <li class="skill glass" data-cat="mobile"><span class="logo"><img src="img/icons/appstore.svg" alt=""></span><b>App Store</b><span>Mobile</span></li>
+          <li class="skill glass" data-cat="mobile"><span class="logo"><img src="img/icons/googleplay.svg" alt=""></span><b>Google Play</b><span>Mobile</span></li>
+          <li class="skill glass" data-cat="backend"><span class="logo"><img src="img/icons/nodedotjs.svg" alt=""></span><b>Node.js</b><span>Backend</span></li>
+          <li class="skill glass" data-cat="backend"><span class="logo"><img src="img/icons/express.svg" alt=""></span><b>Express</b><span>Backend</span></li>
+          <li class="skill glass" data-cat="backend"><span class="logo"><img src="img/icons/php.svg" alt=""></span><b>PHP</b><span>Backend</span></li>
+          <li class="skill glass" data-cat="backend"><span class="logo"><img src="img/icons/laravel.svg" alt=""></span><b>Laravel</b><span>Backend</span></li>
+          <li class="skill glass" data-cat="backend"><span class="logo"><img src="img/icons/rubyonrails.svg" alt=""></span><b>Ruby on Rails</b><span>Backend</span></li>
+          <li class="skill glass" data-cat="ai"><span class="logo"><svg class="ico"><use href="#i-spark"/></svg></span><b>OpenAI API</b><span>AI</span></li>
+          <li class="skill glass" data-cat="ai"><span class="logo"><img src="img/icons/claude.svg" alt=""></span><b>Claude API</b><span>AI</span></li>
+          <li class="skill glass" data-cat="ai"><span class="logo"><img src="img/icons/googlegemini.svg" alt=""></span><b>Gemini</b><span>AI</span></li>
+          <li class="skill glass" data-cat="ai"><span class="logo"><svg class="ico"><use href="#i-cpu"/></svg></span><b>RAG pipelines</b><span>AI</span></li>
+          <li class="skill glass" data-cat="ai"><span class="logo"><svg class="ico"><use href="#i-code"/></svg></span><b>Prompt engineering</b><span>AI</span></li>
+          <li class="skill glass" data-cat="data"><span class="logo"><img src="img/icons/postgresql.svg" alt=""></span><b>PostgreSQL</b><span>Data</span></li>
+          <li class="skill glass" data-cat="data"><span class="logo"><img src="img/icons/mysql.svg" alt=""></span><b>MySQL</b><span>Data</span></li>
+          <li class="skill glass" data-cat="data"><span class="logo"><img src="img/icons/mongodb.svg" alt=""></span><b>MongoDB</b><span>Data</span></li>
+          <li class="skill glass" data-cat="data"><span class="logo"><img src="img/icons/sqlite.svg" alt=""></span><b>SQLite</b><span>Data</span></li>
+          <li class="skill glass" data-cat="data"><span class="logo"><img src="img/icons/prisma.svg" alt=""></span><b>Prisma</b><span>Data</span></li>
+          <li class="skill glass" data-cat="data"><span class="logo"><img src="img/icons/redis.svg" alt=""></span><b>Redis</b><span>Data</span></li>
+          <li class="skill glass" data-cat="devops"><span class="logo"><span class="txt">AWS</span></span><b>AWS</b><span>Cloud &amp; DevOps</span></li>
+          <li class="skill glass" data-cat="devops"><span class="logo"><img src="img/icons/docker.svg" alt=""></span><b>Docker</b><span>Cloud &amp; DevOps</span></li>
+          <li class="skill glass" data-cat="devops"><span class="logo"><img src="img/icons/vercel.svg" alt=""></span><b>Vercel</b><span>Cloud &amp; DevOps</span></li>
+          <li class="skill glass" data-cat="devops"><span class="logo"><img src="img/icons/cloudflare.svg" alt=""></span><b>Cloudflare</b><span>Cloud &amp; DevOps</span></li>
+          <li class="skill glass" data-cat="devops"><span class="logo"><img src="img/icons/netlify.svg" alt=""></span><b>Netlify</b><span>Cloud &amp; DevOps</span></li>
+          <li class="skill glass" data-cat="devops"><span class="logo"><img src="img/icons/render.svg" alt=""></span><b>Render</b><span>Cloud &amp; DevOps</span></li>
+          <li class="skill glass" data-cat="devops"><span class="logo"><img src="img/icons/github.svg" alt=""></span><b>GitHub</b><span>Cloud &amp; DevOps</span></li>
+          <li class="skill glass" data-cat="devops"><span class="logo"><img src="img/icons/git.svg" alt=""></span><b>Git</b><span>Cloud &amp; DevOps</span></li>
+          <li class="skill glass" data-cat="devops"><span class="logo"><img src="img/icons/jest.svg" alt=""></span><b>Jest</b><span>Cloud &amp; DevOps</span></li>
+          <li class="skill glass" data-cat="devops"><span class="logo"><svg class="ico"><use href="#i-refresh"/></svg></span><b>CI/CD pipelines</b><span>Cloud &amp; DevOps</span></li>
+          <li class="skill glass" data-cat="payments"><span class="logo"><img src="img/icons/stripe.svg" alt=""></span><b>Stripe</b><span>Payments</span></li>
+          <li class="skill glass" data-cat="payments"><span class="logo"><span class="txt">M</span></span><b>M-Pesa Daraja</b><span>Payments</span></li>
+          <li class="skill glass" data-cat="payments"><span class="logo"><img src="img/icons/lemonsqueezy.svg" alt=""></span><b>LemonSqueezy</b><span>Payments</span></li>
+          <li class="skill glass" data-cat="payments"><span class="logo"><svg class="ico"><use href="#i-briefcase"/></svg></span><b>Banking APIs</b><span>Payments</span></li>
+          <li class="skill glass" data-cat="payments"><span class="logo"><span class="txt">AT</span></span><b>Africa's Talking SMS</b><span>Payments</span></li>
+          <li class="skill glass" data-cat="leadership"><span class="logo"><svg class="ico"><use href="#i-users"/></svg></span><b>Technical leadership</b><span>Leadership</span></li>
+          <li class="skill glass" data-cat="leadership"><span class="logo"><svg class="ico"><use href="#i-code"/></svg></span><b>Code review</b><span>Leadership</span></li>
+          <li class="skill glass" data-cat="leadership"><span class="logo"><svg class="ico"><use href="#i-grad"/></svg></span><b>Mentoring</b><span>Leadership</span></li>
+          <li class="skill glass" data-cat="leadership"><span class="logo"><svg class="ico"><use href="#i-refresh"/></svg></span><b>Agile / Scrum</b><span>Leadership</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <div class="sec-head center reveal">
+          <span class="kicker"><b>// 06.</b> Testimonials</span>
+          <h2>Kind words from <span class="grad">people I've worked with.</span></h2>
+        </div>
+        <div class="quotes">
+          <figure class="quote glass reveal">
+            <blockquote><p>“Daniel is a fantastic software engineer with an amazing personality, a goal-getter, and a good team player. He is the type of person who reads documentation for fun, his attention to detail is evident in all his projects. I can recommend him without reservation.”</p></blockquote>
+            <figcaption class="quote-by"><span class="avatar" aria-hidden="true">OO</span><b>Olajumoke Priscilla Oni</b></figcaption>
+          </figure>
+          <figure class="quote glass reveal" style="--d:80ms">
+            <blockquote><p>“One of the most passionate developers, ever willing to learn and share. It is always a pleasure working on a project with him, humble, professional, and skilled.”</p></blockquote>
+            <figcaption class="quote-by"><span class="avatar" aria-hidden="true">VO</span><b>Victor Otieno</b></figcaption>
+          </figure>
+          <figure class="quote glass reveal">
+            <blockquote><p>“Great problem solver, and works really well with people. RoR Wizard, and competent in Front End Development as well. Great eye for design. Very impressed.”</p></blockquote>
+            <figcaption class="quote-by"><span class="avatar" aria-hidden="true">EO</span><b>Emmanuel Obonyo</b></figcaption>
+          </figure>
+          <figure class="quote glass reveal" style="--d:80ms">
+            <blockquote><p>“Daniel is an excellent developer. We studied the implementation of coding assessments together and I must say that Daniel brings technical prowess to a team. He is also a creative developer with a leadership initiative.”</p></blockquote>
+            <figcaption class="quote-by"><span class="avatar" aria-hidden="true">TE</span><b>Teddy-Livingstone Ememandu</b></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="contact-intro reveal">
+          <div class="sec-head">
+            <span class="kicker"><b>// 07.</b> Contact</span>
+            <h2>Let's build something <span class="grad">that matters.</span></h2>
+            <p>Have an idea, a system to architect, or a product that needs shipping? Whether it's a monolith to get you to market or microservices to carry you to scale, let's turn it into a real solution.</p>
+          </div>
+          <div class="contact-cards">
+            <a class="c-card glass wide" href="mailto:danielmainawaweru@gmail.com"><span class="c-ico"><svg class="ico"><use href="#i-mail"/></svg></span><div><b>Email</b><span>danielmainawaweru@gmail.com</span></div><svg class="ico ext"><use href="#i-ext"/></svg></a>
+            <a class="c-card glass" href="https://www.linkedin.com/in/danielmaina/" target="_blank" rel="noopener"><span class="c-ico">in</span><div><b>LinkedIn</b><span>in/danielmaina</span></div><svg class="ico ext"><use href="#i-ext"/></svg></a>
+            <a class="c-card glass" href="https://github.com/danmainah" target="_blank" rel="noopener"><span class="c-ico"><img src="img/icons/github.svg" alt=""></span><div><b>GitHub</b><span>github.com/danmainah</span></div><svg class="ico ext"><use href="#i-ext"/></svg></a>
+            <div class="c-card glass wide"><span class="c-ico"><svg class="ico"><use href="#i-pin"/></svg></span><div><b>Location</b><span>Nakuru, Kenya · Remote worldwide</span></div></div>
+          </div>
+          <p class="script-quote">“Let's turn your idea into a solution.”</p>
+        </div>
+
+        <div class="form-card glass reveal" style="--d:120ms">
+          <span class="kicker"><b>//</b> Send a message</span>
+          <h3>Tell me about <span class="grad">your idea.</span></h3>
+          <p>Fill out the form and I'll get back to you as soon as possible.</p>
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/xqknzjpd" method="POST">
+            <div class="field"><label for="f-name">Your Name</label><input id="f-name" name="name" autocomplete="name" placeholder="Jane Doe" required></div>
+            <div class="field"><label for="f-email">Your Email</label><input id="f-email" type="email" name="email" autocomplete="email" placeholder="jane@example.com" required></div>
+            <div class="field full"><label for="f-subject">Subject</label>
+              <select id="f-subject" name="_subject">
+                <option>Project collaboration</option>
+                <option>System architecture &amp; consulting</option>
+                <option>Hiring / job opportunity</option>
+                <option>Just saying hi</option>
+              </select>
+            </div>
+            <div class="field full"><label for="f-message">Message</label><textarea id="f-message" name="message" placeholder="Tell me about your idea, project, or just say hi!" required></textarea></div>
+            <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="btn btn-primary" type="submit"><svg class="ico"><use href="#i-send"/></svg> Send Message <svg class="ico"><use href="#i-arrow"/></svg></button>
+            <p id="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <div class="other-ways">
+            <small>Other ways to connect</small>
+            <div>
+              <a href="https://github.com/danmainah" target="_blank" rel="noopener"><img src="img/icons/github.svg" alt=""> GitHub</a>
+              <a href="https://www.linkedin.com/in/danielmaina/" target="_blank" rel="noopener"><b>in</b> LinkedIn</a>
             </div>
           </div>
         </div>
       </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span class="end-pill">// Built to be useful</span>
+      <p>© <span id="year">2026</span> Daniel Maina Waweru · Designed &amp; built from scratch</p>
     </div>
-    <!-- Contact End -->
+  </footer>
 
-    <!-- Footer Start -->
-    <div
-      class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5"
-    >
-      <div class="container text-center py-5">
-        <div class="d-flex justify-content-center mb-4">
-          <a class="btn btn-light btn-social mr-2" href="https://github.com/danmainah"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a class="btn btn-light btn-social mr-2" href="mailto:danielmainawaweru@gmail.com"
-            ><i class="fas fa-envelope"></i
-          ></a>
-          <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/danielmaina/"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </div>
-        <p class="m-0">
-          &copy;
-          <a class="text-white font-weight-bold" href="#">Daniel Maina</a>. All
-          Rights Reserved.
-        </p>
-      </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"
-      ><i class="fa fa-angle-double-up"></i
-    ></a>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/main.js" defer></script>
+</body>
 </html>
