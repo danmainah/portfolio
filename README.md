@@ -2,7 +2,7 @@
 
 Personal portfolio of Daniel Maina Waweru, solution builder and systems architect.
 
-**Live:** https://danmainah.github.io/portfolio/
+**Live:** https://danielmaina.is-a.dev
 
 A single static page (HTML, CSS and vanilla JS, no build step) featuring products, experience, skills and a contact form powered by Formspree.
 
